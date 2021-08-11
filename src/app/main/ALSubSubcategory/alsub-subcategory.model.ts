@@ -1,0 +1,2 @@
+export interface ALSubSubcategory {
+}

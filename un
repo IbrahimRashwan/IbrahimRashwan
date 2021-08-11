@@ -1,0 +1,127 @@
+for %n in (
+    ALAddress/ALAddress-list ,ALAddress/ALAddress-create,ALAddress/ALAddress-edit,ALAddress/ALAddress-details,
+    ALArea/ALArea-list ,ALArea/ALArea-create,ALArea/ALArea-edit,ALArea/ALArea-details,
+    ALBranch/ALBranch-list ,ALBranch/ALBranch-create,ALBranch/ALBranch-edit,ALBranch/ALBranch-details,
+    ALCart/ALCart-list ,ALCart/ALCart-create,ALCart/ALCart-edit,ALCart/ALCart-details,
+    ALCategory/ALCategory-list ,ALCategory/ALCategory-create,ALCategory/ALCategory-edit,ALCategory/ALCategory-details,
+    ALCity/ALCity-list ,ALCity/ALCity-create,ALCity/ALCity-edit,ALCity/ALCity-details,
+    ALContact/ALContact-list ,ALContact/ALContact-create,ALContact/ALContact-edit,ALContact/ALContact-details,
+    ALCountry/ALCountry-list ,ALCountry/ALCountry-create,ALCountry/ALCountry-edit,ALCountry/ALCountry-details,
+    ALCoupon/ALCoupon-list ,ALCoupon/ALCoupon-create,ALCoupon/ALCoupon-edit,ALCoupon/ALCoupon-details,
+    ALFeq/ALFeq-list ,ALFeq/ALFeq-create,ALFeq/ALFeq-edit,ALFeq/ALFeq-details,
+    ALFooter/ALFooter-list ,ALFooter/ALFooter-create,ALFooter/ALFooter-edit,ALFooter/ALFooter-details,
+    ALGuest/ALGuest-list ,ALGuest/ALGuest-create,ALGuest/ALGuest-edit,ALGuest/ALGuest-details,
+    ALHeader/ALHeader-list ,ALHeader/ALHeader-create,ALHeader/ALHeader-edit,ALHeader/ALHeader-details,
+    ALNotification/ALNotification-list ,ALNotification/ALNotification-create,ALNotification/ALNotification-edit,ALNotification/ALNotification-details,
+    ALOffer/ALOffer-list ,ALOffer/ALOffer-create,ALOffer/ALOffer-edit,ALOffer/ALOffer-details,
+    ALOrder/ALOrder-list ,ALOrder/ALOrder-create,ALOrder/ALOrder-edit,ALOrder/ALOrder-details,
+    ALPages/ALPages-list ,ALPages/ALPages-create,ALPages/ALPages-edit,ALPages/ALPages-details,
+    ALProduct/ALProduct-list ,ALProduct/ALProduct-create,ALProduct/ALProduct-edit,ALProduct/ALProduct-details,
+    ALRate/ALRate-list ,ALRate/ALRate-create,ALRate/ALRate-edit,ALRate/ALRate-details,
+    ALSeo/ALSeo-list ,ALSeo/ALSeo-create,ALSeo/ALSeo-edit,ALSeo/ALSeo-details,
+    ALSetting/ALSetting-list ,ALSetting/ALSetting-create,ALSetting/ALSetting-edit,ALSetting/ALSetting-details,
+    ALSubSubcategory/ALSubSubcategory-list ,ALSubSubcategory/ALSubSubcategory-create,ALSubSubcategory/ALSubSubcategory-edit,ALSubSubcategory/ALSubSubcategory-details,
+    ALSubcategory/ALSubcategory-list ,ALSubcategory/ALSubcategory-create,ALSubcategory/ALSubcategory-edit,ALSubcategory/ALSubcategory-details,
+    ALSubscribe/ALSubscribe-list ,ALSubscribe/ALSubscribe-create,ALSubscribe/ALSubscribe-edit,ALSubscribe/ALSubscribe-details,
+    ); do ng g c --skipTests=true --skip-import %n
+for %n in (
+    ALAddress/ALAddress,
+    ALArea/ALArea,
+    ALBranch/ALBranch,
+    ALCart/ALCart,
+    ALCategory/ALCategory,
+    ALCity/ALCity,
+    ALContact/ALContact,
+    ALCountry/ALCountry,
+    ALCoupon/ALCoupon,
+    ALFeq/ALFeq,
+    ALFooter/ALFooter,
+    ALGuest/ALGuest,
+    ALHeader/ALHeader,
+    ALNotification/ALNotification,
+    ALOffer/ALOffer,
+    ALOrder/ALOrder,
+    ALPages/ALPages,
+    ALProduct/ALProduct,
+    ALRate/ALRate,
+    ALSeo/ALSeo,
+    ALSetting/ALSetting,
+    ALSubSubcategory/ALSubSubcategory,
+    ALSubcategory/ALSubcategory,
+    ALSubscribe/ALSubscribe,
+    ); do ng g s  --flat --skipTests=true %n
+
+for %n in (
+    ALAddress/ALAddress-list/ALAddress-list ,ALAddress/ALAddress-create/ALAddress-create,ALAddress/ALAddress-edit/ALAddress-edit,ALAddress/ALAddress-details/ALAddress-details,
+    ALArea/ALArea-list/ALArea-list ,ALArea/ALArea-create/ALArea-create,ALArea/ALArea-edit/ALArea-edit,ALArea/ALArea-details/ALArea-details,
+    ALBranch/ALBranch-list/ALBranch-list ,ALBranch/ALBranch-create/ALBranch-create,ALBranch/ALBranch-edit/ALBranch-edit,ALBranch/ALBranch-details/ALBranch-details,
+    ALCart/ALCart-list/ALCart-list ,ALCart/ALCart-create/ALCart-create,ALCart/ALCart-edit/ALCart-edit,ALCart/ALCart-details/ALCart-details,
+    ALCategory/ALCategory-list/ALCategory-list ,ALCategory/ALCategory-create/ALCategory-create,ALCategory/ALCategory-edit/ALCategory-edit,ALCategory/ALCategory-details/ALCategory-details,
+    ALCity/ALCity-list/ALCity-list ,ALCity/ALCity-create/ALCity-create,ALCity/ALCity-edit/ALCity-edit,ALCity/ALCity-details/ALCity-details,
+    ALContact/ALContact-list/ALContact-list ,ALContact/ALContact-create/ALContact-create,ALContact/ALContact-edit/ALContact-edit,ALContact/ALContact-details/ALContact-details,
+    ALCountry/ALCountry-list/ALCountry-list ,ALCountry/ALCountry-create/ALCountry-create,ALCountry/ALCountry-edit/ALCountry-edit,ALCountry/ALCountry-details/ALCountry-details,
+    ALCoupon/ALCoupon-list/ALCoupon-list ,ALCoupon/ALCoupon-create/ALCoupon-create,ALCoupon/ALCoupon-edit/ALCoupon-edit,ALCoupon/ALCoupon-details/ALCoupon-details,
+    ALFeq/ALFeq-list/ALFeq-list ,ALFeq/ALFeq-create/ALFeq-create,ALFeq/ALFeq-edit/ALFeq-edit,ALFeq/ALFeq-details/ALFeq-details,
+    ALFooter/ALFooter-list/ALFooter-list ,ALFooter/ALFooter-create/ALFooter-create,ALFooter/ALFooter-edit/ALFooter-edit,ALFooter/ALFooter-details/ALFooter-details,
+    ALGuest/ALGuest-list/ALGuest-list ,ALGuest/ALGuest-create/ALGuest-create,ALGuest/ALGuest-edit/ALGuest-edit,ALGuest/ALGuest-details/ALGuest-details,
+    ALHeader/ALHeader-list/ALHeader-list ,ALHeader/ALHeader-create/ALHeader-create,ALHeader/ALHeader-edit/ALHeader-edit,ALHeader/ALHeader-details/ALHeader-details,
+    ALNotification/ALNotification-list/ALNotification-list ,ALNotification/ALNotification-create/ALNotification-create,ALNotification/ALNotification-edit/ALNotification-edit,ALNotification/ALNotification-details/ALNotification-details,
+    ALOffer/ALOffer-list/ALOffer-list ,ALOffer/ALOffer-create/ALOffer-create,ALOffer/ALOffer-edit/ALOffer-edit,ALOffer/ALOffer-details/ALOffer-details,
+    ALOrder/ALOrder-list/ALOrder-list ,ALOrder/ALOrder-create/ALOrder-create,ALOrder/ALOrder-edit/ALOrder-edit,ALOrder/ALOrder-details/ALOrder-details,
+    ALPages/ALPages-list/ALPages-list ,ALPages/ALPages-create/ALPages-create,ALPages/ALPages-edit/ALPages-edit,ALPages/ALPages-details/ALPages-details,
+    ALProduct/ALProduct-list/ALProduct-list ,ALProduct/ALProduct-create/ALProduct-create,ALProduct/ALProduct-edit/ALProduct-edit,ALProduct/ALProduct-details/ALProduct-details,
+    ALRate/ALRate-list/ALRate-list ,ALRate/ALRate-create/ALRate-create,ALRate/ALRate-edit/ALRate-edit,ALRate/ALRate-details/ALRate-details,
+    ALSeo/ALSeo-list/ALSeo-list ,ALSeo/ALSeo-create/ALSeo-create,ALSeo/ALSeo-edit/ALSeo-edit,ALSeo/ALSeo-details/ALSeo-details,
+    ALSetting/ALSetting-list/ALSetting-list ,ALSetting/ALSetting-create/ALSetting-create,ALSetting/ALSetting-edit/ALSetting-edit,ALSetting/ALSetting-details/ALSetting-details,
+    ALSubSubcategory/ALSubSubcategory-list/ALSubSubcategory-list ,ALSubSubcategory/ALSubSubcategory-create/ALSubSubcategory-create,ALSubSubcategory/ALSubSubcategory-edit/ALSubSubcategory-edit,ALSubSubcategory/ALSubSubcategory-details/ALSubSubcategory-details,
+    ALSubcategory/ALSubcategory-list/ALSubcategory-list ,ALSubcategory/ALSubcategory-create/ALSubcategory-create,ALSubcategory/ALSubcategory-edit/ALSubcategory-edit,ALSubcategory/ALSubcategory-details/ALSubcategory-details,
+    ALSubscribe/ALSubscribe-list/ALSubscribe-list ,ALSubscribe/ALSubscribe-create/ALSubscribe-create,ALSubscribe/ALSubscribe-edit/ALSubscribe-edit,ALSubscribe/ALSubscribe-details/ALSubscribe-details,
+    ); do ng g s --flat --skipTests=true --skip-import %n
+
+
+    // create loop to do some thing 
+    for %n in (statment , statment , ......) do what you need to do %n
+
+    --flat                  => folder not create 
+    --skipTests=true        => spec not create
+    --skip-import           => not import it in nodemodules
+    --ng g i name typename  => to generate fie with type <typename> = name.typename.ts
+
+
+
+
+    for %n in (
+    ALAddress/ALAddress-delete,
+    ALArea/ALArea-delete,
+    ALBranch/ALBranch-delete,
+    ALCart/ALCart-delete,
+    ALCategory/ALCategory-delete,
+    ALCity/ALCity-delete,
+    ALContact/ALContact-delete,
+    ALCountry/ALCountry-delete,
+    ALCoupon/ALCoupon-delete,
+    ALFeq/ALFeq-delete,
+    ALFooter/ALFooter-delete,
+    ALGuest/ALGuest-delete,
+    ALHeader/ALHeader-delete,
+    ALNotification/ALNotification-delete,
+    ALOffer/ALOffer-delete,
+    ALOrder/ALOrder-delete,
+    ALPages/ALPages-delete,
+    ALProduct/ALProduct-delete,
+    ALRate/ALRate-delete,
+    ALRole/ALRole-delete,
+    ALSeo/ALSeo-delete,
+    ALSetting/ALSetting-delete,
+    ALSubSubcategory/ALSubSubcategory-delete,
+    ALSubcategory/ALSubcategory-delete,
+    ALSubscribe/ALSubscribe-delete,
+    ALUser/ALUser-delete,
+    ); do ng g s --skipTests=true --flat %n
+
+
+
+    for %n in (
+   ALSubSubcategory/ALSubSubcategory-list ,ALSubSubcategory/ALSubSubcategory-create,ALSubSubcategory/ALSubSubcategory-edit,ALSubSubcategory/ALSubSubcategory-details,
+   
+    ); do ng g s --skipTests=true --flat %n
